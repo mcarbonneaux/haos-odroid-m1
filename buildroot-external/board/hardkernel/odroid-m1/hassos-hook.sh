@@ -7,7 +7,7 @@ function hassos_pre_image() {
     local SPL_IMG="$(path_spl_img)"
 
     cp "${BINARIES_DIR}/boot.scr" "${BOOT_DATA}/boot.scr"
-    cp "${BINARIES_DIR}/meson-sm1-odroid-m1.dtb" "${BOOT_DATA}/meson-sm1-odroid-m1.dtb"
+    cp "${BINARIES_DIR}/rk3568-odroid-m1.dtb" "${BOOT_DATA}/rk3568-odroid-m1.dtb"
 
     mkdir -p "${BOOT_DATA}/overlays"
     cp "${BINARIES_DIR}"/*.dtbo "${BOOT_DATA}/overlays/"
